@@ -15,6 +15,8 @@ series_length_probabilities <- series_length_implied_probabilities/(sum(series_l
 #going to count how many times player got _ rbis in 2026 regular season
 games <- 139
 rbis <- c(0,1,2,3,4,5,6)
+sum(rbis)
+
 times <- c(NA,36,10,4,2,1,0)
 times[1] <- games-sum(times, na.rm = T)
 rbi_probabilities <- times/games
